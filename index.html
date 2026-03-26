@@ -25,6 +25,37 @@ body {
     animation: fadeIn 1.5s ease-in-out;
 }
 
+/* キャラグリッド改良版 */
+.character-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.character-card {
+    border: 1px solid rgba(255,255,255,0.8);
+    padding: 25px 10px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+
+    background: rgba(0, 0, 0, 0.65);   /* ← 見やすさアップ */
+    backdrop-filter: blur(4px);
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow: 0 0 6px rgba(255,255,255,0.6);
+}
+
+.character-card:hover {
+    background: white;
+    color: black;
+    text-shadow: none;
+    transform: translateY(-5px);
+}
+
 /* 星空 */
 body::before {
     content: "";
