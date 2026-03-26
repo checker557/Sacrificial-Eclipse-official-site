@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>キャラ名 | ゲームタイトル</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+  color: white;
+  background: url("star-bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.wrapper {
+  background: rgba(0,0,0,0.92);
+  min-height: 100vh;
+  padding: 100px 20px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.back {
+  margin-bottom: 40px;
+}
+
+.back a {
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid white;
+}
+
+.character-layout {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.character-image {
+  flex: 1;
+  min-width: 280px;
+  background: #222;
+  height: 500px; /* 立ち絵サイズ想定 */
+}
+
+.character-info {
+  flex: 1;
+  min-width: 280px;
+}
+
+h1 {
+  font-size: clamp(28px, 4vw, 48px);
+}
+
+@media (max-width: 768px) {
+  .character-layout {
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="wrapper">
+  <div class="container">
+
+    <div class="back">
+      <a href="index.html">← トップへ戻る</a>
+    </div>
+
+    <div class="character-layout">
+      <div class="character-image">
+        <!-- ここに立ち絵 -->
+      </div>
+
+      <div class="character-info">
+        <h1>キャラ名</h1>
+        <p>
+          年齢：<br>
+          身長：<br>
+          誕生日：<br>
+        </p>
+
+        <p>
+          ここにキャラ詳細説明を書く。
+        </p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
