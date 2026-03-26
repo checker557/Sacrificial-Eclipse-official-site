@@ -15,6 +15,15 @@ body {
     background: linear-gradient(to bottom, #0b1d3a, #000814);
     overflow-x: hidden;
 }
+    
+    @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+body {
+    animation: fadeIn 1.5s ease-in-out;
+}
 
 /* 星空 */
 body::before {
