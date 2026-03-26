@@ -3,99 +3,134 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>キャラ名 | ゲームタイトル</title>
+<title>Character 3 | The Sacrifice of the Zodiac</title>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap');
+
 body {
-  margin: 0;
-  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
-  color: white;
-  background: url("star-bg.jpg") no-repeat center center fixed;
-  background-size: cover;
+    margin: 0;
+    font-family: 'Noto Serif JP', serif;
+    color: white;
+    background: linear-gradient(to bottom, #0b1d3a, #000814);
 }
 
-.wrapper {
-  background: rgba(0,0,0,0.92);
-  min-height: 100vh;
-  padding: 100px 20px;
+body::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(white 1px, transparent 1px);
+    background-size: 40px 40px;
+    opacity: 0.15;
+    z-index: -1;
 }
 
 .container {
-  max-width: 1100px;
-  margin: 0 auto;
-  width: 90%;
-}
-
-.back {
-  margin-bottom: 40px;
-}
-
-.back a {
-  color: white;
-  text-decoration: none;
-  border-bottom: 1px solid white;
-}
-
-.character-layout {
-  display: flex;
-  gap: 40px;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.character-image {
-  flex: 1;
-  min-width: 280px;
-  background: #222;
-  height: 500px; /* 立ち絵サイズ想定 */
-}
-
-.character-info {
-  flex: 1;
-  min-width: 280px;
+    padding: 80px 10%;
+    background: rgba(0,0,0,0.85);
+    min-height: 100vh;
 }
 
 h1 {
-  font-size: clamp(28px, 4vw, 48px);
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
 }
 
-@media (max-width: 768px) {
-  .character-layout {
-    flex-direction: column;
-  }
+.profile {
+    margin-top: 30px;
+    line-height: 1.8;
+}
+
+.navigation {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.navigation a {
+    margin: 0 15px;
+    padding: 8px 16px;
+    border: 1px solid white;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.navigation a:hover {
+    background: white;
+    color: black;
+}
+
+.other-characters {
+    margin-top: 60px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.grid a {
+    border: 1px solid white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.grid a:hover {
+    background: white;
+    color: black;
 }
 </style>
 </head>
 
 <body>
 
-<div class="wrapper">
-  <div class="container">
+<div class="container">
 
-    <div class="back">
-      <a href="index.html">← トップへ戻る</a>
-    </div>
+<h1>Character 1</h1>
 
-    <div class="character-layout">
-      <div class="character-image">
-        <!-- ここに立ち絵 -->
-      </div>
+<div class="profile">
+<p>
+■ 星座：牡羊座<br>
+■ 年齢：17歳<br>
+■ 星霊：炎の星霊<br><br>
 
-      <div class="character-info">
-        <h1>キャラ名</h1>
-        <p>
-          年齢：<br>
-          身長：<br>
-          誕生日：<br>
-        </p>
+情熱的で衝動的。<br>
+誰よりも仲間想いだが、その強さは危うさも孕んでいる。
+</p>
+</div>
 
-        <p>
-          ここにキャラ詳細説明を書く。
-        </p>
-      </div>
-    </div>
+<div class="navigation">
+<a href="character12.html">← 前のキャラ</a>
+<a href="index.html">一覧に戻る</a>
+<a href="character2.html">次のキャラ →</a>
+</div>
 
-  </div>
+<div class="other-characters">
+<h2>他のキャラクター</h2>
+
+<div class="grid">
+<a href="character1.html">1</a>
+<a href="character2.html">2</a>
+<a href="character3.html">3</a>
+<a href="character4.html">4</a>
+<a href="character5.html">5</a>
+<a href="character6.html">6</a>
+<a href="character7.html">7</a>
+<a href="character8.html">8</a>
+<a href="character9.html">9</a>
+<a href="character10.html">10</a>
+<a href="character11.html">11</a>
+<a href="character12.html">12</a>
+</div>
+
+</div>
+
 </div>
 
 </body>
