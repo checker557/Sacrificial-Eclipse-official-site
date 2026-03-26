@@ -7,23 +7,7 @@
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap');
-
-        <script>
-const sections = document.querySelectorAll('.fade-section');
-
-const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-        }
-    });
-}, { threshold: 0.2 });
-
-sections.forEach(section => {
-    observer.observe(section);
-});
-</script>
-
+        
 body {
     margin: 0;
     font-family: 'Noto Serif JP', serif;
