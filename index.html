@@ -105,6 +105,16 @@ body {
     display: inline-block;   /* カードが縦に伸びない */
 }
 
+/* 星座マークホバー */
+.character-card .emblem:hover {
+    color: #fffa;                    /* 白に少し透明感の光 */
+    text-shadow: 0 0 10px #fff,
+                 0 0 20px #0ff,
+                 0 0 30px #00f;     /* 光のグラデーション */
+    transform: scale(1.2) rotate(10deg); /* 少し大きく＆回転 */
+    transition: all 0.3s ease;
+}
+
 /* 星空 */
 body::before {
     content: "";
