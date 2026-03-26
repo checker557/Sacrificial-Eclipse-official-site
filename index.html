@@ -1,1 +1,173 @@
-<h1>表示テスト</h1>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Sacrifice of the Zodiac</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Noto Serif JP', serif;
+    color: white;
+    background: linear-gradient(to bottom, #0b1d3a, #000814);
+    overflow-x: hidden;
+}
+
+/* 星空 */
+body::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(white 1px, transparent 1px);
+    background-size: 40px 40px;
+    opacity: 0.15;
+    z-index: -1;
+}
+
+/* タイトル */
+header {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+header h1 {
+    font-size: 48px;
+    letter-spacing: 3px;
+}
+
+/* ナビボタン */
+nav {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+nav a {
+    display: inline-block;
+    margin: 10px 15px;
+    padding: 10px 20px;
+    border: 1px solid white;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: white;
+    color: black;
+}
+
+/* セクション */
+section {
+    padding: 80px 10%;
+    background: rgba(0, 0, 0, 0.8);
+    margin-bottom: 30px;
+}
+
+section h2 {
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* キャラグリッド */
+.character-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.character-card {
+    border: 1px solid white;
+    padding: 20px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.character-card:hover {
+    background: white;
+    color: black;
+    cursor: pointer;
+}
+
+/* フッター */
+footer {
+    text-align: center;
+    padding: 40px;
+    font-size: 14px;
+    opacity: 0.6;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>The Sacrifice of the Zodiac</h1>
+    <p>―― 星に選ばれし、十二の運命 ――</p>
+</header>
+
+<nav>
+    <a href="#story">ストーリー</a>
+    <a href="#system">システム</a>
+    <a href="#concept">コンセプト</a>
+    <a href="#character">キャラ紹介</a>
+    <a href="#gallery">CGギャラリー</a>
+</nav>
+
+<section id="story">
+    <h2>ストーリー</h2>
+    <p>
+    世界は「星の儀式」によって保たれている。<br>
+    選ばれた十二人は、運命に抗うか、それとも受け入れるのか――。
+    </p>
+</section>
+
+<section id="system">
+    <h2>システム</h2>
+    <p>
+    選択肢によって分岐するマルチエンディング方式。<br>
+    好感度と真実度によって物語が変化する。
+    </p>
+</section>
+
+<section id="concept">
+    <h2>コンセプト</h2>
+    <p>
+    「犠牲」と「救済」をテーマにしたダークファンタジー・ノベルゲーム。
+    </p>
+</section>
+
+<section id="character">
+    <h2>キャラ紹介</h2>
+
+    <div class="character-grid">
+        <a href="character1.html" class="character-card">Character 1</a>
+        <a href="character2.html" class="character-card">Character 2</a>
+        <a href="character3.html" class="character-card">Character 3</a>
+        <a href="character4.html" class="character-card">Character 4</a>
+        <a href="character5.html" class="character-card">Character 5</a>
+        <a href="character6.html" class="character-card">Character 6</a>
+        <a href="character7.html" class="character-card">Character 7</a>
+        <a href="character8.html" class="character-card">Character 8</a>
+        <a href="character9.html" class="character-card">Character 9</a>
+        <a href="character10.html" class="character-card">Character 10</a>
+        <a href="character11.html" class="character-card">Character 11</a>
+        <a href="character12.html" class="character-card">Character 12</a>
+    </div>
+</section>
+
+<section id="gallery">
+    <h2>CGギャラリー</h2>
+    <p>準備中</p>
+</section>
+
+<footer>
+    © 2026 The Sacrifice of the Zodiac
+</footer>
+
+</body>
+</html>
