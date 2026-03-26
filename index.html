@@ -8,20 +8,7 @@
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap');
 
-body {
-    margin: 0;
-    font-family: 'Noto Serif JP', serif;
-    color: white;
-    background: linear-gradient(to bottom, #0b1d3a, #000814);
-    overflow-x: hidden;
-}
-    
-    @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-    <script>
+        <script>
 const sections = document.querySelectorAll('.fade-section');
 
 const observer = new IntersectionObserver(entries => {
@@ -36,6 +23,19 @@ sections.forEach(section => {
     observer.observe(section);
 });
 </script>
+
+body {
+    margin: 0;
+    font-family: 'Noto Serif JP', serif;
+    color: white;
+    background: linear-gradient(to bottom, #0b1d3a, #000814);
+    overflow-x: hidden;
+}
+    
+    @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
 
 body {
     animation: fadeIn 1.5s ease-in-out;
@@ -144,7 +144,7 @@ footer {
 
 <header>
     <h1>贄の黄道</h1>
-    The Sacrifice of the Zodiac
+    -The Sacrifice of the Zodiac
     <p>―― 変えろ、決まった黄道を。 ――</p>
 </header>
 
