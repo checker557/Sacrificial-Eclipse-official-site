@@ -21,8 +21,36 @@ body {
     to { opacity: 1; }
 }
 
+    <script>
+const sections = document.querySelectorAll('.fade-section');
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+        }
+    });
+}, { threshold: 0.2 });
+
+sections.forEach(section => {
+    observer.observe(section);
+});
+</script>
+
 body {
     animation: fadeIn 1.5s ease-in-out;
+}
+
+    /* スクロールフェード用 */
+.fade-section {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.fade-section.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* 星空 */
@@ -116,7 +144,7 @@ footer {
 
 <header>
     <h1>贄の黄道</h1>
-    <h1>The Sacrifice of the Zodiac</h1>
+    The Sacrifice of the Zodiac
     <p>―― 変えろ、決まった黄道を。 ――</p>
 </header>
 
@@ -128,7 +156,7 @@ footer {
     <a href="#gallery">CGギャラリー</a>
 </nav>
 
-<section id="story">
+<section id="story" class="fade-section">
     <h2>ストーリー</h2>
     <p>
     星と星座、そしてそこから生まれ実体を持った「星霊」と、それらを統べる神々によって構築された世界、星界。<br>
@@ -139,20 +167,20 @@ footer {
     </p>
 </section>
 
-<section id="concept">
+<section id="concept" class="fade-section">
     <h2>コンセプト</h2>
     1.章ごとに主人公が変わるオムニバス形式
-    </p>
+    <p>
     12人の星霊は惑星に準えた計8つのゲームに挑み、生存を図ります。<br>
     章ごとに視点が変わるため、様々なキャラクターの魅力の深掘りやメタ読みなどのしにくさなどを実現しています。
     </p><br>
     2.星霊同士の美しい物語
-　　 </p>
+　　 <p>
     ゼウスの討伐という共通の目的に向かうようになった星霊たちによる複雑に絡まったドラマや自己犠牲など、物語の中で繰り広げられる美しい物語を味わうことができます。
 　 　</p>
 </section>
     
-    <section id="seirei">
+    <section id="seirei" class="fade-section">
     <h2>星霊とは</h2>
     <p>
     星霊とは星座に込められた人々の想いが具現化し実体を持ったもので、星界では人間界のように家庭を作っている。<br>
@@ -160,7 +188,7 @@ footer {
     </p>
 </section>
 
-<section id="character">
+<section id="character" class="fade-section">
     <h2>キャラ紹介</h2>
 
     <div class="character-grid">
@@ -179,7 +207,7 @@ footer {
     </div>
 </section>
 
-<section id="gallery">
+<section id="gallery" class="fade-section">
     <h2>CGギャラリー</h2>
     <p>準備中</p>
 </section>
