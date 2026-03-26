@@ -64,6 +64,47 @@ body {
     opacity: 0.6;
 }
 
+    /* キャラグリッド */
+.character-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+/* キャラカード */
+.character-card {
+    border: 1px solid rgba(255,255,255,0.8);
+    padding: 15px 10px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+    background: rgba(0,0,0,0.65);
+    backdrop-filter: blur(4px);
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow: 0 0 6px rgba(255,255,255,0.6);
+}
+
+.character-card:hover {
+    background: white;
+    color: black;
+    text-shadow: none;
+    transform: translateY(-5px);
+}
+
+/* 星座マーク */
+.character-card .emblem {
+    font-size: 40px;
+    color: white;
+    text-shadow: 0 0 6px #fff;
+    margin-bottom: 8px;
+    line-height: 1;          /* 高さを最小化 */
+    display: inline-block;   /* カードが縦に伸びない */
+}
+
 /* 星空 */
 body::before {
     content: "";
@@ -202,31 +243,21 @@ footer {
 <section id="character">
     <h2>キャラ紹介</h2>
 
-    <div class="character-grid">
-        <a href="character1.html" class="character-card">
-  <div class="emblem">♈︎</div> <!-- 末尾にU+FE0Eでモノクロ化 -->
-  シェラタン
-</a>
-    <div class="character-grid">
-        <a href="character1.html" class="character-card">
-  <div class="emblem">♉︎</div> <!-- 末尾にU+FE0Eでモノクロ化 -->
-  アルデバラン
-</a>
-    <div class="character-grid">
-        <a href="character1.html" class="character-card">
-  <div class="emblem">♊︎</div> <!-- 末尾にU+FE0Eでモノクロ化 -->
-  ポルックス
-</a>
-        <a href="character4.html" class="character-card">テグミネ</a>
-        <a href="character5.html" class="character-card">レグルス</a>
-        <a href="character6.html" class="character-card">スピカ</a>
-        <a href="character7.html" class="character-card">エルス</a>
-        <a href="character8.html" class="character-card">アンタレス</a>
-        <a href="character9.html" class="character-card">カウス</a>
-        <a href="character10.html" class="character-card">ナシラ</a>
-        <a href="character11.html" class="character-card">サダルメリク</a>
-        <a href="character12.html" class="character-card">アルフェルグ</a>
-    </div>
+<div class="character-grid">
+  <a href="character1.html" class="character-card"><div class="emblem">♈︎</div>シェラタン</a>
+  <a href="character2.html" class="character-card"><div class="emblem">♉︎</div>アルデバラン</a>
+  <a href="character3.html" class="character-card"><div class="emblem">♊︎</div>ポルックス</a>
+  <a href="character4.html" class="character-card"><div class="emblem">♋︎</div>テグミネ</a>
+  <a href="character5.html" class="character-card"><div class="emblem">♌︎</div>レグルス</a>
+  <a href="character6.html" class="character-card"><div class="emblem">♍︎</div>スピカ</a>
+  <a href="character7.html" class="character-card"><div class="emblem">♎︎</div>エルス</a>
+  <a href="character8.html" class="character-card"><div class="emblem">♏︎</div>アンタレス</a>
+  <a href="character9.html" class="character-card"><div class="emblem">♐︎</div>カウス</a>
+  <a href="character10.html" class="character-card"><div class="emblem">♑︎</div>ナシラ</a>
+  <a href="character11.html" class="character-card"><div class="emblem">♒︎</div>サダルメリク</a>
+  <a href="character12.html" class="character-card"><div class="emblem">♓︎</div>アルフェルグ</a>
+</div>
+    
 </section>
 
 <section id="gallery">
