@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>あなたのゲームタイトル</title>
+<meta name="description" content="オリジナルノベルゲーム公式サイト">
+
+<style>
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Hiragino Sans", sans-serif;
+  background: #0f0f14;
+  color: white;
+}
+
+/* ナビ */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.7);
+  backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 15px 0;
+  z-index: 1000;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #ff4da6;
+}
+
+/* セクション共通 */
+section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 100px 20px 60px;
+  box-sizing: border-box;
+}
+
+/* ヒーロー */
+.hero {
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  flex-direction: column;
+}
+
+.hero h1 {
+  font-size: clamp(32px, 5vw, 64px);
+  margin: 0;
+}
+
+.hero p {
+  font-size: clamp(16px, 2vw, 22px);
+  opacity: 0.8;
+}
+
+/* 通常セクション */
+.content {
+  max-width: 1000px;
+  width: 90%;
+}
+
+/* キャラ一覧例 */
+.character-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.card {
+  background: #1c1c26;
+  padding: 20px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background: #252536;
+}
+
+/* フッター */
+footer {
+  text-align: center;
+  padding: 30px;
+  background: #111;
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+/* スマホ調整 */
+@media (max-width: 768px) {
+  nav {
+    gap: 20px;
+    font-size: 14px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <a href="#home">HOME</a>
+  <a href="#story">STORY</a>
+  <a href="#character">CHARACTER</a>
+  <a href="#gallery">GALLERY</a>
+</nav>
+
+<section id="home" class="hero">
+  <h1>あなたのゲームタイトル</h1>
+  <p>―― ここにキャッチコピーを入れる ――</p>
+</section>
+
+<section id="story">
+  <div class="content">
+    <h2>STORY</h2>
+    <p>
+      ここにあらすじを書きます。<br>
+      世界観説明もここ。
+    </p>
+  </div>
+</section>
+
+<section id="character">
+  <div class="content">
+    <h2>CHARACTER</h2>
+    <div class="character-grid">
+      <div class="card">キャラ①</div>
+      <div class="card">キャラ②</div>
+      <div class="card">キャラ③</div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="content">
+    <h2>GALLERY</h2>
+    <p>スチルやキービジュアルをここに配置</p>
+  </div>
+</section>
+
+<footer>
+  © 2026 Your Name
+</footer>
+
+</body>
+</html>
